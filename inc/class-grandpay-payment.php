@@ -15,12 +15,12 @@ class WelcartGrandpayPaymentProcessor {
         add_action('usces_action_acting_processing', array($this, 'process_payment'), 10, 2);
 
         // コールバック処理をより早いタイミングで登録
-        add_action('wp', array($this, 'handle_payment_callback'), 1);
+        //         add_action('wp', array($this, 'handle_payment_callback'), 1);
         add_action('template_redirect', array($this, 'handle_payment_callback'), 1);
 
         // Webhook処理
-        add_action('wp_ajax_grandpay_webhook', array($this, 'handle_webhook'));
-        add_action('wp_ajax_nopriv_grandpay_webhook', array($this, 'handle_webhook'));
+        //         add_action('wp_ajax_grandpay_webhook', array($this, 'handle_webhook'));
+        //         add_action('wp_ajax_nopriv_grandpay_webhook', array($this, 'handle_webhook'));
 
         // REST API登録
         add_action('rest_api_init', array($this, 'register_webhook_endpoint'));

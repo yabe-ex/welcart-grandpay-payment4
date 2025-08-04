@@ -4,7 +4,7 @@
  * Plugin Name: Welcart Grandpay payment
  * Plugin URI:
  * Description: Welcartで、Grandpayの決済ゲートウェイを利用するためのプラグインです。
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: kirason
  * Author URI:
  * License: GPLv2 or later
